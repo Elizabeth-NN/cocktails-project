@@ -1,0 +1,58 @@
+{
+    "cocktails": [
+      {
+        "id": 1,
+        "name": "Classic Mojito",
+        "image": "https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg",
+        "category": "Classic",
+        "ingredients": [
+          { "name": "White rum", "amount": "2 oz" },
+          { "name": "Lime juice", "amount": "1 oz" },
+          { "name": "Sugar", "amount": "2 tsp" },
+          { "name": "Mint leaves", "amount": "6-8" },
+          { "name": "Soda water", "amount": "Top" }
+        ],
+        "instructions": "Muddle mint and sugar with lime juice. Add rum, ice, and top with soda water. Garnish with mint.",
+        "glass": "Highball",
+        "alcoholic": true,
+        "price": 8.99
+      },
+      {
+        "id": 2,
+        "name": "Espresso Martini",
+        "image": "https://www.thecocktaildb.com/images/media/drink/n0sx531504372951.jpg",
+        "category": "Modern",
+        "ingredients": [
+          { "name": "Vodka", "amount": "1.5 oz" },
+          { "name": "Coffee liqueur", "amount": "1 oz" },
+          { "name": "Espresso", "amount": "1 oz" },
+          { "name": "Simple syrup", "amount": "0.5 oz" }
+        ],
+        "instructions": "Shake all ingredients with ice. Strain into a chilled martini glass. Garnish with coffee beans.",
+        "glass": "Martini",
+        "alcoholic": true,
+        "price": 10.99
+      },
+      {
+        "id": 3,
+        "name": "Virgin Piña Colada",
+        "image": "https://www.thecocktaildb.com/images/media/drink/7kty5d1606778736.jpg",
+        "category": "Non-Alcoholic",
+        "ingredients": [
+          { "name": "Pineapple juice", "amount": "3 oz" },
+          { "name": "Coconut cream", "amount": "2 oz" },
+          { "name": "Ice", "amount": "1 cup" }
+        ],
+        "instructions": "Blend all ingredients until smooth. Serve in a chilled hurricane glass with pineapple garnish.",
+        "glass": "Hurricane",
+        "alcoholic": false,
+        "price": 6.99
+      }
+    ],
+    "categories": [
+      { "id": 1, "name": "Classic" },
+      { "id": 2, "name": "Modern" },
+      { "id": 3, "name": "Non-Alcoholic" }
+    ],
+    "orders": []
+  }

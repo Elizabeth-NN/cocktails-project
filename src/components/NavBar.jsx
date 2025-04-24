@@ -38,6 +38,12 @@ function NavBar() {
           >
             About
           </Link>
+          <Link 
+            to="/orders" 
+            className="text-gray-700 hover:text-amber-600 transition-colors"
+          >
+            Orders
+          </Link>
         </nav>
       </div>
       

@@ -11,7 +11,7 @@ const Footer = () => {
     if (email) {
       setSubscribed(true);
       setEmail('');
-      // Logic for actual email subscription would go here (e.g., API call).
+      
     }
   };
 

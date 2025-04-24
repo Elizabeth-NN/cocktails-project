@@ -1,58 +1,123 @@
 {
-    "cocktails": [
-      {
-        "id": 1,
-        "name": "Classic Mojito",
-        "image": "https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg",
-        "category": "Classic",
-        "ingredients": [
-          { "name": "White rum", "amount": "2 oz" },
-          { "name": "Lime juice", "amount": "1 oz" },
-          { "name": "Sugar", "amount": "2 tsp" },
-          { "name": "Mint leaves", "amount": "6-8" },
-          { "name": "Soda water", "amount": "Top" }
-        ],
-        "instructions": "Muddle mint and sugar with lime juice. Add rum, ice, and top with soda water. Garnish with mint.",
-        "glass": "Highball",
-        "alcoholic": true,
-        "price": 8.99
-      },
-      {
-        "id": 2,
-        "name": "Espresso Martini",
-        "image": "https://www.thecocktaildb.com/images/media/drink/n0sx531504372951.jpg",
-        "category": "Modern",
-        "ingredients": [
-          { "name": "Vodka", "amount": "1.5 oz" },
-          { "name": "Coffee liqueur", "amount": "1 oz" },
-          { "name": "Espresso", "amount": "1 oz" },
-          { "name": "Simple syrup", "amount": "0.5 oz" }
-        ],
-        "instructions": "Shake all ingredients with ice. Strain into a chilled martini glass. Garnish with coffee beans.",
-        "glass": "Martini",
-        "alcoholic": true,
-        "price": 10.99
-      },
-      {
-        "id": 3,
-        "name": "Virgin Piña Colada",
-        "image": "https://www.thecocktaildb.com/images/media/drink/7kty5d1606778736.jpg",
-        "category": "Non-Alcoholic",
-        "ingredients": [
-          { "name": "Pineapple juice", "amount": "3 oz" },
-          { "name": "Coconut cream", "amount": "2 oz" },
-          { "name": "Ice", "amount": "1 cup" }
-        ],
-        "instructions": "Blend all ingredients until smooth. Serve in a chilled hurricane glass with pineapple garnish.",
-        "glass": "Hurricane",
-        "alcoholic": false,
-        "price": 6.99
-      }
-    ],
-    "categories": [
-      { "id": 1, "name": "Classic" },
-      { "id": 2, "name": "Modern" },
-      { "id": 3, "name": "Non-Alcoholic" }
-    ],
-    "orders": []
-  }
+  "cocktails": [
+    {
+      "id": "1",
+      "name": "Classic Mojito",
+      "image": "https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg",
+      "category": "Classic",
+      "ingredients": [
+        {
+          "name": "White rum",
+          "amount": "2 oz"
+        },
+        {
+          "name": "Lime juice",
+          "amount": "1 oz"
+        },
+        {
+          "name": "Sugar",
+          "amount": "2 tsp"
+        },
+        {
+          "name": "Mint leaves",
+          "amount": "6-8"
+        },
+        {
+          "name": "Soda water",
+          "amount": "Top"
+        }
+      ],
+      "instructions": "Muddle mint and sugar with lime juice. Add rum, ice, and top with soda water. Garnish with mint.",
+      "glass": "Highball",
+      "alcoholic": true,
+      "price": 8.99
+    },
+    {
+      "name": "Espresso mms",
+      "ingredients": [
+        "Vodka",
+        "1.5 oz",
+        "Coffee liqueur",
+        "1 oz",
+        "Espresso",
+        "1 oz",
+        "Simple syrup",
+        "0.5 oz"
+      ],
+      "instructions": "Shake all ingredients with ice. Strain into a chilled martini glass. Garnish with coffee beans.",
+      "image": "https://www.thecocktaildb.com/images/media/drink/n0sx531504372951.jpg",
+      "id": "2",
+      "alcoholic": true
+     
+    },
+    {
+      "id": "46a9",
+      "name": "sfdsght",
+      "ingredients": [
+        "Vodka",
+        "1.5 oz",
+        "Coffee liqueur",
+        "1 oz",
+        "Espresso",
+        "1 oz",
+        "Simple syrup",
+        "0.5 oz"
+      ],
+      "instructions": "erhtuj",
+      "image": "erghtjyku",
+      "alcoholic": true
+    }
+    ,
+    {
+      "id": "4647725a9",
+      "name": "coffee",
+      "ingredients": [
+
+        "1.5 oz",
+        "Coffee liqueur",
+        "1 oz",
+        "Espresso",
+        "1 oz",
+        "Simple syrup",
+        "0.5 oz"
+      ],
+      "instructions": "erhtuj",
+      "image": "https://images.unsplash.com/photo-1680593180871-b4f97012f2be?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alcoholic": false
+    }
+
+    ,
+    {
+      "id": "4645a9",
+      "name": "Lime juice",
+      "ingredients": [
+
+        "1.5 oz",
+        "lime juice",
+        "1 oz",
+        "Espresso",
+        "1 oz",
+        "Simple syrup",
+        "0.5 oz"
+      ],
+      "instructions": "erhtuj",
+      "image": "https://media.istockphoto.com/id/91130331/photo/lemon-juice.jpg?s=1024x1024&w=is&k=20&c=LAw2iYvOdE6cv1Mxuy7inkongcZACET_5OkGf_tiAUA=",
+      "alcoholic": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Classic"
+    },
+    {
+      "id": "2",
+      "name": "Modern"
+    },
+    {
+      "id": "3",
+      "name": "Non-Alcoholic"
+    }
+  ],
+  "orders": []
+}

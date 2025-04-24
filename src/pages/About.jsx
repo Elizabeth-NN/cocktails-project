@@ -8,9 +8,7 @@ const About = () => {
       {/* Our Story */}
       <section className="py-16 container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          {/* <h2 className="text-3xl font-bold text-amber-800 mb-8 text-center">
-            <span className="border-b-4 border-amber-600 pb-2">Our Story</span>
-          </h2> */}
+         
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-lg mb-4">

@@ -41,9 +41,10 @@ function NavBar() {
         </nav>
       </div>
       
-      {/* Renders child route components */}
+      
       
     </header>
+    
     <Outlet /> 
     </>
   );

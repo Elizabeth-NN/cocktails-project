@@ -1,62 +1,70 @@
-import { Link } from 'react-router-dom';
+const CocktailCard = ({ cocktail, isLoading, onViewDetails, onEdit, onDelete }) => {
+  const renderIngredient = (ingredient) => {
+    if (typeof ingredient === 'object') {
+      return (
+        <span>
+          <strong>{ingredient.name}</strong>
+          {ingredient.amount && `: ${ingredient.amount}`}
+        </span>
+      );
+    }
+    return ingredient;
+  };
 
-const CocktailCard = ({ cocktail }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-      {/* Cocktail Image */}
-      <div className="h-48 overflow-hidden">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+      {cocktail.image && (
         <img 
           src={cocktail.image} 
           alt={cocktail.name} 
-          className="w-full h-full object-cover"
-          onError={(e) => {
-            e.target.src = 'https://via.placeholder.com/300x200?text=No+Image'; // Fallback image
-          }}
+          className="w-full h-48 object-cover cursor-pointer"
+          onClick={() => onViewDetails(cocktail)}
         />
-      </div>
-
-      {/* Cocktail Details */}
+      )}
       <div className="p-4">
-        {/* Name and Category */}
-        <div className="flex justify-between items-start mb-2">
-          <h3 className="text-xl font-bold text-gray-800">{cocktail.name}</h3>
-          <span className={`px-2 py-1 text-xs rounded-full ${
-            cocktail.alcoholic ? 'bg-amber-100 text-amber-800' : 'bg-green-100 text-green-800'
-          }`}>
-            {cocktail.alcoholic ? 'Alcoholic' : 'Non-Alcoholic'}
-          </span>
-        </div>
-
-        {/* Glass Type */}
-        <p className="text-sm text-gray-600 mb-3">
-          <span className="font-medium">Glass:</span> {cocktail.glass}
-        </p>
-
-        {/* Ingredients  */}
-        <div className="mb-4">
-          <h4 className="text-sm font-medium text-gray-700 mb-1">Ingredients:</h4>
-          <ul className="text-xs text-gray-600 space-y-1">
-            {cocktail.ingredients.slice(0, 3).map((ingredient, index) => (
-              <li key={index}>
-                {ingredient.name} - {ingredient.amount}
-              </li>
+        <h3 
+          className="text-xl font-semibold mb-2 cursor-pointer hover:text-blue-600"
+          onClick={() => onViewDetails(cocktail)}
+        >
+          {cocktail.name}
+        </h3>
+        <div className="mb-3">
+          <h4 className="font-medium text-gray-700">Ingredients:</h4>
+          <ul className="list-disc list-inside">
+            {cocktail.ingredients.slice(0, 3).map((ingredient, idx) => (
+              <li key={idx}>{renderIngredient(ingredient)}</li>
             ))}
             {cocktail.ingredients.length > 3 && (
-              <li className="text-amber-600">+{cocktail.ingredients.length - 3} more</li>
+              <li className="text-blue-600">+ {cocktail.ingredients.length - 3} more</li>
             )}
           </ul>
         </div>
-
-        {/* Price and Details Link */}
-        <div className="flex justify-between items-center">
-          <span className="text-lg font-bold text-amber-600">${cocktail.price.toFixed(2)}</span>
-          
-          <Link 
-            to={`/cocktails/${cocktail.id}`}
-            className="text-sm bg-amber-600 hover:bg-amber-700 text-white px-3 py-1 rounded transition-colors"
+        <div className="mb-4">
+          <h4 className="font-medium text-gray-700">Instructions:</h4>
+          <p className="line-clamp-2">{cocktail.instructions}</p>
+        </div>
+        <div className="flex space-x-2">
+          <button
+            onClick={() => onViewDetails(cocktail)}
+            className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 disabled:bg-blue-300"
+            disabled={isLoading}
           >
             View Details
-          </Link>
+          </button>
+          <button
+            onClick={() => onEdit(cocktail)}
+            className="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 disabled:bg-yellow-300"
+            disabled={isLoading}
+          >
+            Edit
+          </button>
+          <button
+            onClick={() => onDelete(cocktail.id)}
+            className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 disabled:bg-red-300"
+            disabled={isLoading}
+          >
+            Delete
+          </button>
         </div>
       </div>
     </div>

@@ -1,12 +1,11 @@
 {
   "cocktails": [
     {
-      "name": "Negroni",
+      "name": "Negroniii",
       "ingredients": [
         "1 oz gin 1 oz Campari 1 oz sweet vermouth"
       ],
       "instructions": "Stir all ingredients with ice and strain into a rocks glass with ice. Garnish with orange peel.",
-      "alcoholic": true,
       "image": "https://images.unsplash.com/photo-1542849187-5ec6ea5e6a27?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TmVncm9uaSUyMGNvY2t0YWlsfGVufDB8fDB8fHww",
       "id": "66b9"
     },

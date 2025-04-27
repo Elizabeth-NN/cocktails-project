@@ -47,7 +47,7 @@ const CocktailForm = ({
             value={formData.price}
             onChange={handleChange}
             className="w-full p-2 border rounded"
-            type="text"
+            type="number"
             required
             disabled={isLoading}
           />

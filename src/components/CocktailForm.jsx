@@ -27,7 +27,7 @@ const CocktailForm = ({
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Ingredients (comma separated)
+              Contents (comma separated)
             </label>
             <input
               type="text"
@@ -41,13 +41,13 @@ const CocktailForm = ({
           </div>
         </div>
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700 mb-1">Instructions</label>
-          <textarea
-            name="instructions"
-            value={formData.instructions}
+          <label className="block text-sm font-medium text-gray-700 mb-1">price</label>
+          <input
+            name="price"
+            value={formData.price}
             onChange={handleChange}
             className="w-full p-2 border rounded"
-            rows="3"
+            type="text"
             required
             disabled={isLoading}
           />

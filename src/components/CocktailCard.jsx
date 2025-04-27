@@ -29,7 +29,7 @@ const CocktailCard = ({ cocktail, isLoading, onViewDetails, onEdit, onDelete }) 
           {cocktail.name}
         </h3>
         <div className="mb-3">
-          <h4 className="font-medium text-gray-700">Ingredients:</h4>
+          <h4 className="font-medium text-gray-700">Contents:</h4>
           <ul className="list-disc list-inside">
             {cocktail.ingredients.slice(0, 3).map((ingredient, idx) => (
               <li key={idx}>{renderIngredient(ingredient)}</li>
@@ -40,8 +40,10 @@ const CocktailCard = ({ cocktail, isLoading, onViewDetails, onEdit, onDelete }) 
           </ul>
         </div>
         <div className="mb-4">
-          <h4 className="font-medium text-gray-700">Instructions:</h4>
-          <p className="line-clamp-2">{cocktail.instructions}</p>
+          <h4 className="font-medium text-gray-700">price
+            :</h4>
+          <p className="line-clamp-2">${cocktail.price
+            }</p>
         </div>
         <div className="flex space-x-2">
           <button

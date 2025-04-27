@@ -16,7 +16,7 @@ const CocktailsPage = () => {
   const [formData, setFormData] = useState({
     name: '',
     ingredients: '',
-    instructions: '',
+    price: '',
     image: ''
   });
   const [isLoading, setIsLoading] = useState(false);
@@ -78,7 +78,7 @@ const CocktailsPage = () => {
       const cocktailData = {
         name: formData.name,
         ingredients: ingredientsArray,
-        instructions: formData.instructions,
+        price: formData.price,
         image: formData.image
       };
 
@@ -109,7 +109,7 @@ const CocktailsPage = () => {
     setFormData({
       name: cocktail.name,
       ingredients: formatIngredientsForDisplay(cocktail.ingredients),
-      instructions: cocktail.instructions,
+      price: cocktail.price,
       image: cocktail.image || ''
     });
     setShowAddForm(true);
@@ -133,7 +133,7 @@ const CocktailsPage = () => {
   };
 
   const resetForm = () => {
-    setFormData({ name: '', ingredients: '', instructions: '', image: '' });
+    setFormData({ name: '', ingredients: '', price: '', image: '' });
     setEditingCocktail(null);
   };
 

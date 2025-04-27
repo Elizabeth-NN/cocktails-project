@@ -37,7 +37,7 @@ const CocktailDetailsModal = ({ cocktail, onClose, onEdit, onDelete }) => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
-                <h3 className="text-lg font-semibold mb-2">Ingredients</h3>
+                <h3 className="text-lg font-semibold mb-2">Contents</h3>
                 <ul className="space-y-1">
                   {cocktail.ingredients.map((ingredient, idx) => (
                     <li key={idx} className="flex items-start">
@@ -51,16 +51,16 @@ const CocktailDetailsModal = ({ cocktail, onClose, onEdit, onDelete }) => {
               <div>
                 <h3 className="text-lg font-semibold mb-2">Details</h3>
                 <div className="space-y-2">
-                  <p><span className="font-medium">Category:</span> {cocktail.category || 'N/A'}</p>
-                  <p><span className="font-medium">Glass:</span> {cocktail.glass || 'N/A'}</p>
+                  <p><span className="font-medium">Category:</span> {cocktail.category || 'custom cocktail'}</p>
+                  <p><span className="font-medium">Glass:</span> {cocktail.glass || 'wine glass'}</p>
                   <p><span className="font-medium">Alcoholic:</span> {cocktail.alcoholic ? 'Yes' : 'No'}</p>
                 </div>
               </div>
             </div>
             
             <div>
-              <h3 className="text-lg font-semibold mb-2">Instructions</h3>
-              <p className="whitespace-pre-line">{cocktail.instructions}</p>
+              <h3 className="text-lg font-semibold mb-2">price</h3>
+              <p className="whitespace-pre-line">${cocktail.price}</p>
             </div>
   
             <div className="mt-6 flex space-x-2">
